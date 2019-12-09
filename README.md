@@ -3,48 +3,53 @@ Midlleware C# .Net Core 2.2 com API Rest, ORM Entity e Identity Framework, auten
 
 Originalmente criado por Vinícius de Andrade "Seja Fullstack com Asp.NET Core 2, Angular 7, EF Core 2" https://www.udemy.com/share/100QgoBEsTc15QQX4=/
 
-<h4>Tecnologias</h4>
-<ul>
-  <li>.NET Core 2.2</li>
-  <li>.NET Entity Core Framework</li>
-  <li>.NET Identity Core Framework </li>
-  <li>Autenticação JWT</li>
-  <li>MSSQL Server</li>
-  <li>Angular 7</li>
-  <li>Swagger API Document</li>
- </ul>
+#### Tecnologias
+ 
+- .NET Core 2.2
+- .NET EntityFramework Core
+* .NET Identity Framework Core
+- Autenticação JWT
+- MSSQL Server
+- Angular 7
+- Swagger API Document
 
- <h4>Requisitos</h4>
- <ul>
-  <li>.NET Core 2.2 (https://dotnet.microsoft.com/download/dotnet-core/2.2)</li>
-  <li>Node.js (https://nodejs.org/en/download/) </li> 
-  <li>MSSQL Server (https://www.microsoft.com/pt-br/sql-server/sql-server-downloads) </li>
- </ul>
+ ##### Requisitos
+ 
+- [SDK .NET Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2)
+- [Node.js](https://nodejs.org/en/download/)
+- [MSSQL Server](https://www.microsoft.com/pt-br/sql-server/sql-server-downloads)
+- [CLI Angular](https://cli.angular.io/quickstart)
+ ```
+ npm install -g @angular/cli</li>
+ ``` 
 
- <h4>Como usar</h4>
- <h5>Preparar Banco de dados (ProAgil.Repository)</h5>
- <ul>
- <li>alterar connectionStrings do banco de dados em appsettings.Development.json</li>
-  <li>realizar migrations</li>
-  <li>dotnet ef --startup-project ..\ProAgil.WebAPI migrations add helloworld</li>
-  <li>dotnet ef --startup-project ..\ProAgil.WebAPI database update<\li>
-</ul> 
- <h5>Backend (ProAgil.WebAPI)</h5>
- <ul> 
-   <li>executar os comandos no diretório ProAgil.WebAPI</li>
-  <li>dotnet restore </li>
-  <li>dotnet watch run </li> 
-  <li>acessar no navegador ou Postman http://localhost:5000 </li> 
- </ul>
- <h5>Frontend (ProAgil-App)</h5>
- <ul>
-  <li>executar os comandos no diretório ProAgil-App</li>
-  <li>npm install </li>
-  <li>npm build  </li> 
-  <li>Instalar CLI Angular (https://cli.angular.io/quickstart): npm install -g @angular/cli</li>
-  <li>ng serve -o</li> 
-  <li>acessar no navegador localhost:4200 </li> 
- </ul>
+
+ ##### Como usar
+ 
+ ###### Preparar Banco de dados
+ Alterar connectionStrings em appsettings.Development.json e realizar as migrations
+ ```
+ dotnet ef --startup-project ..\ProAgil.WebAPI migrations add helloworld  
+ dotnet ef --startup-project ..\ProAgil.WebAPI database update  
+ ``` 
+ ##### Backend (ProAgil.WebAPI)
+ 
+ Executar os comandos no diretório ProAgil.WebAPI
+ 
+ ```
+ dotnet restore
+ dotnet watch run
+ ```
+ Acessar no navegador ou Postman http://localhost:5000
+ 
+ ###### Frontend (ProAgil-App)
+  Executar os comandos no diretório ProAgil-App
+ ```
+ npm install
+ npm build 
+ ng serve -o
+ ```
+Acessar no navegador localhost:4200
  
  <h5>Tela Eventos</h5>
 <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/61652208-d414a600-ac8d-11e9-8f80-c8487e7fce3a.png">
@@ -67,21 +72,50 @@ Originalmente criado por Vinícius de Andrade "Seja Fullstack com Asp.NET Core 2
  <img src="https://user-images.githubusercontent.com/22710963/61677991-e7e4fa00-acd7-11e9-9196-1593b648548c.png" alt="reset" style="max-width:100%;"></a></p> 
 
  
- <h4>Pacotes Angular instalados</h4>
-  <ul>
- <li>npm install -g @angular/cli (Instalar CLI Angular (https://cli.angular.io/quickstart) )</li>
-  <li>npm install bootstrap (Instalar Bootstrap (https://getbootstrap.com.br/docs/4.1/getting-started/download/)) </li>
-  <li>npm install ngx-bootstrap --save (Instalar NGX Bootstrap (https://valor-software.com/ngx-bootstrap/#/))</li> 
-  <li>npm install --save-dev @fortawesome/fontawesome-free (Instalar Fonte Awesome (https://fontawesome.com/how-to-use/on-the-web/setup/using-package-managers))</li> 
-  <li> npm install ngx-toastr --save
-npm install @angular/animations --save (Instalar Notificações (https://www.npmjs.com/package/ngx-toastr)) </li> 
-  
-  <li>npm i @auth0/angular-jwt (Instalar JWT Angular)</li>
-  <li>ng g g auth/auth (Instalar Angular Guard) </li> 
-  <li>ng add ngx-bootstrap --component tabs (Instalar Tabs (https://valor-software.com/ngx-bootstrap/#/tabs))</li>  
-  <li>npm install --save ngx-mask (Instalar Mask (https://www.npmjs.com/package/ngx-mask))</li>
-  <li>npm i ngx-currency (Instalar Mascara dinheiro)</li>
- </ul>
+#### Pacotes npm instalados
+ 
+CLI Angular (https://cli.angular.io/quickstart) 
+```
+npm install -g @angular/cli
+```
+Bootstrap (https://getbootstrap.com.br/docs/4.1/getting-started/download/)
+```
+npm install bootstrap
+```
+Ngx Bootstrap (https://valor-software.com/ngx-bootstrap/#/)
+```
+npm install ngx-bootstrap --save 
+```
+Fonte Awesome (https://fontawesome.com/how-to-use/on-the-web/setup/using-package-managers)
+```
+npm install --save-dev @fortawesome/fontawesome-free
+```
+Notificações Toastr
+```
+npm install ngx-toastr --save
+npm install @angular/animations --save 
+```
+JWT 
+```
+npm i @auth0/angular-jwt
+```
+Instalar Mascara dinheiro
+```
+npm i ngx-currency 
+```
+Mask (https://www.npmjs.com/package/ngx-mask)
+```
+npm install --save ngx-mask
+```
+Angular Guard
+```
+ng g g auth/auth 
+```
+Instalar Tabs (https://valor-software.com/ngx-bootstrap/#/tabs
+```
+ng add ngx-bootstrap --component tabs 
+```
+
   
  
 
